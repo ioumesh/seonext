@@ -1,12 +1,13 @@
+import Head from "next/head";
 import React from "react";
 import OrganizationSchema from "../components/schema/static/OrganizationSchema";
 
 const SeoContainer = () => {
   return (
     <>
-      <HEad>
+      <Head>
         <OrganizationSchema />
-      </HEad>
+      </Head>
       <h1>Hi, i am testing rich result..</h1>
     </>
   );
