@@ -2,7 +2,7 @@ import React from "react";
 const OrganizationSchema = () => {
   const structuredData = {
     '@context': 'https://schema.org',
-    '@type': 'umesh',
+    '@type': 'umesh constant',
     headline: 'Title of the blog post',
     description: 'Description of the blog post',
     author: [
