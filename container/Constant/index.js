@@ -4,10 +4,8 @@ import OrganizationSchema from "../../components/schema/static/OrganizationSchem
 const SeoConstantContainer = () => {
   return (
     <>
-      <Head>
-        <OrganizationSchema />
-      </Head>
-      <h1>Hi, i am constant schema  </h1>
+      <OrganizationSchema />
+      <h1>Hi, i am constant schema </h1>
     </>
   );
 };
