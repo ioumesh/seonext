@@ -8,7 +8,7 @@ const SeoFuntionalContainer = () => {
     <Head>
         <OrganizationFunctionSchema/>
     </Head>
-    <h1>Hi, i am constant schema</h1>
+    <h1>Hi, i am Functional schema</h1>
     </>
   )
 }
