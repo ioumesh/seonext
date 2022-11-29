@@ -1,7 +1,6 @@
 import React from "react";
-
-const  createOrganizationSchema=()=> {
-  return {
+const OrganizationSchema = () => {
+  const structuredData = {
     "@context": "http://schema.org",
     "@type": "Organization",
     name: "Lybrate ",
@@ -21,13 +20,11 @@ const  createOrganizationSchema=()=> {
       contactType: "customer service",
     },
   };
-}
-const OrganizationSchema = () => {
   return (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(createOrganizationSchema()),
+        __html: JSON.stringify(structuredData),
       }}
     />
   );
