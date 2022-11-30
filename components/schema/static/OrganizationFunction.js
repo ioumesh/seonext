@@ -4,8 +4,8 @@ import React from "react";
 function createOrganizationSchema() {
   return {
     "@context": "http://schema.org",
-    "@type": "functional",
-    name: "Lybrate ",
+    "@type":"Organization",
+    name: "Umesh Functional ",
     logo: "https://www.lybrate.com/img/lybrate-logo-pure-white-small.png",
     telephone: "090  2905  9702",
     url: "https://www.lybrate.com/",

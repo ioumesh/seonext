@@ -4,8 +4,8 @@ import React from "react";
 function createConstant() {
   return {
     "@context": "http://schema.org",
-    "@type": "constant",
-    name: "Lybrate ",
+    "@type":"Organization",
+    name: "Umesh Constant",
     logo: "https://www.lybrate.com/img/lybrate-logo-pure-white-small.png",
     telephone: "090  2905  9702",
     url: "https://www.lybrate.com/",
