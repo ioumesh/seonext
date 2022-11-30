@@ -3,7 +3,7 @@ import StructuredData from "../../components/structure";
 const StrctureContainer = () => {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "structure schema",
     headline: "Title of the blog post",
     description: "Description of the blog post",
     author: [

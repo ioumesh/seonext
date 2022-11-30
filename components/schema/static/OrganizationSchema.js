@@ -1,29 +1,39 @@
 import Head from "next/head";
 import React from "react";
-const OrganizationSchema = () => {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "My Constant Schema umesh",
-    headline: "Title of the blog post",
-    description: "Description of the blog post",
-    author: [
-      {
-        "@type": "Person",
-        name: "umesh kumar",
-      },
+
+function createConstant() {
+  return {
+    "@context": "http://schema.org",
+    "@type": "constant schema",
+    name: "Lybrate ",
+    logo: "https://www.lybrate.com/img/lybrate-logo-pure-white-small.png",
+    telephone: "090  2905  9702",
+    url: "https://www.lybrate.com/",
+    email: "hello@lybrate.com",
+    sameAs: [
+      "https://twitter.com/lybrate",
+      "https://plus.google.com/+Lybrate/",
+      "https://www.facebook.com/lybrate",
+      "https://www.linkedin.com/company/lybrate",
     ],
-    datePublished: "2022-09-14T09:00:00.000Z",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+91 90155 59900",
+      contactType: "customer service",
+    },
   };
+}
+const OrganizationFunctionSchema = () => {
   return (
     <Head>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(createConstant()),
         }}
       />
     </Head>
   );
 };
 
-export default OrganizationSchema;
+export default OrganizationFunctionSchema;
