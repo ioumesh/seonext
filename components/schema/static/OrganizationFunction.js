@@ -1,6 +1,7 @@
+import Head from "next/head";
 import React from "react";
 
-const  createOrganizationSchema=()=> {
+function createOrganizationSchema() {
   return {
     "@context": "http://schema.org",
     "@type": "Organization",
@@ -24,12 +25,14 @@ const  createOrganizationSchema=()=> {
 }
 const OrganizationFunctionSchema = () => {
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(createOrganizationSchema()),
-      }}
-    />
+    <Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(createOrganizationSchema()),
+        }}
+      />
+    </Head>
   );
 };
 
